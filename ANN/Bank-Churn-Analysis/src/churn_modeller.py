@@ -129,15 +129,17 @@ class model:
             X (list): customer details
 
         Returns:
-            [boolean]: if customers will churn
+            [boolean]: Determining if customers will leave the bank
         """
         with tf.device('/CPU:0'):
+            # Create a dataframe from the input list
             X = pd.DataFrame(X)
             X = X.iloc[:, 3:].values
+
             # Load saved ann model
             self.ann = tf.keras.models.load_model(self.ann_model_path)
 
-            # Load babel encoder and encode "Gender" column
+            # Load label encoder and encode "Gender" column
             le: LabelEncoder = load(self.label_encoder_model_path)
             X[:, 2] = le.transform(X[:, 2])
 
