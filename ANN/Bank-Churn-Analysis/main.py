@@ -27,8 +27,8 @@ if(user_choice == "1"):
 
     data_source = datasets[selected_dataset_number - 1]
     model_name = input("Give a name for your model : ")
-    batch_size = input("Specify batch size : ")
-    epochs = input("Specify number of epochs : ")
+    batch_size = int(input("Specify batch size : "))
+    epochs = int(input("Specify number of epochs : "))
 
     print("\nTraining your model...\n")
     model = churn_modeller.model(model_name)
