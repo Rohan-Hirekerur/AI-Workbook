@@ -16,6 +16,21 @@
 
 ## Dataset :
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Row No | CustomerId | Surname | CreditScore | Geography | Gender | Age | Tenure | Balance | NumOfProducts | HasCrCard | IsActiveMember | EstimatedSalary | Exited |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The data set has the following as mentioned below.  
+The ones striked out don't need to be considered in our model as they are irrelevant for analysing churn for the bank.  
+
+### Columns :
+~~Row No~~  
+~~CustomerId~~  
+~~Surname~~  
+CreditScore  
+Geography  
+Gender  
+Age  
+Tenure  
+Balance  
+NumOfProducts  
+HasCrCard  
+IsActiveMember  
+EstimatedSalary  
+Exited   
