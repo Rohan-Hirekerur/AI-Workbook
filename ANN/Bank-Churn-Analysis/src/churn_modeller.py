@@ -76,7 +76,7 @@ class model:
             dir_name, 'dataset/{}'.format(data_source)))
 
         # Name and surname of customer is irrelevant for determining churn.
-        # Hence consider data from 3rd column onwards
+        # Hence consider data from 4th column onwards (index 3)
         # Last column has data about churn, i.e. dependent variable. Add it to y
         X = dataset.iloc[:, 3:-1].values
         y = dataset.iloc[:, -1].values
